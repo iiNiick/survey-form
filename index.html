@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiko Store Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Kiko Store Feedback Form</h1>
+        <p class="subtitle">Help us grow! Tell us about your market experience.</p>
+
+        <form
+            action="https://script.google.com/macros/s/AKfycbz6U5BN5dP_xCsnnES0OiO7GBj7ZVCx6jg388F3KHqb44IgKs_5PrG7WgbMhmXk0Qz8dA/exec"
+            method="post">
+
+            <div class="form-group" id="group-name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name...">
+            </div>
+
+            <div class="form-group" id="group-gender">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" class="radio-label">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" class="radio-label">Female</label>
+                </div>
+            </div>
+
+            <div class="form-group" id="group-email">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email...">
+            </div>
+
+            <div class="form-group" id="group-birthday">
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+
+            <div class="form-group" id="group-age">
+                <label for="age">Age Group:</label>
+                <input list="age-options" id="age" name="age" placeholder="Select age group...">
+                <datalist id="age-options">
+                    <option value="18-30">
+                    <option value="31-50">
+                    <option value="51+">
+                </datalist>
+            </div>
+
+            <div class="form-group" id="group-products">
+                <label>Products Purchased:</label>
+                <div class="checkbox-grid">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="prod-eggs" name="products" value="Eggs">
+                        <label for="prod-eggs" class="checkbox-label">Eggs</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="prod-milk" name="products" value="Milk">
+                        <label for="prod-milk" class="checkbox-label">Milk</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="prod-cabbage" name="products" value="Cabbage">
+                        <label for="prod-cabbage" class="checkbox-label">Cabbage</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="prod-lettuce" name="products" value="Lettuce">
+                        <label for="prod-lettuce" class="checkbox-label">Lettuce</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="prod-tomato" name="products" value="Tomato">
+                        <label for="prod-tomato" class="checkbox-label">Tomato</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="prod-banana" name="products" value="Banana">
+                        <label for="prod-banana" class="checkbox-label">Banana</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="prod-pineapple" name="products" value="Pineapple">
+                        <label for="prod-pineapple" class="checkbox-label">Pineapple</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" id="group-comment">
+                <label for="comment">How was your experience?</label>
+                <textarea id="comment" name="comment" rows="4" placeholder="Enter your comment..."></textarea>
+            </div>
+
+            <div class="form-group submit-group">
+                <input type="submit" value="Submit Feedback">
+                <input type="reset" value="Reset Form">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

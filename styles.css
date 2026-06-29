@@ -1,0 +1,163 @@
+body {
+    background-color: #f4f1ea;
+    font-family: 'Quicksand', sans-serif;
+    color: #2c3e2e;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    background-color: #ffffff;
+    max-width: 550px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(44, 62, 46, 0.1);
+    border-top: 8px solid #4a6b48;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    color: #3b533a;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #70856b;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.form-group {
+    background-color: #faf8f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #8fa882;
+    box-sizing: border-box;
+}
+
+#group-name {
+    background-color: #fdfbf7; 
+}
+
+#group-gender .radio-group {
+    margin-top: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+#group-products .checkbox-grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #4a6b48;
+    cursor: pointer;
+}
+
+#group-comment textarea {
+    resize: vertical;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #3b533a;
+}
+
+.radio-group label.radio-label,
+.checkbox-item label.checkbox-label {
+    display: inline;
+    font-weight: 500;
+    margin-left: 6px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="date"],
+input[list],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d1cbbf;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    color: #2c3e2e;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+    border-color: #4a6b48;
+    background-color: #fbfcfb;
+    box-shadow: 0 0 5px rgba(74, 107, 72, 0.2);
+}
+
+/* --- Updated Button Container and Styles --- */
+
+.submit-group {
+    background-color: transparent;
+    border-left: none;
+    padding: 0;
+    /* Arranges buttons side-by-side with a gap */
+    display: flex;
+    gap: 15px; 
+}
+
+/* Base styles for both submit and reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    flex: 1; /* Makes both buttons take up equal 50% width */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Submit Button Specifics */
+input[type="submit"] {
+    background-color: #e67e22;
+    color: white;
+    box-shadow: 0 4px 10px rgba(230, 126, 34, 0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: #d35400;
+}
+
+/* New Reset Button Specifics (Earth tone to match the form theme) */
+input[type="reset"] {
+    background-color: #70856b;
+    color: white;
+    box-shadow: 0 4px 10px rgba(112, 133, 107, 0.2);
+}
+
+input[type="reset"]:hover {
+    background-color: #4a6b48;
+}
